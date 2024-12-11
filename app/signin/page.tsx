@@ -70,7 +70,7 @@ const SignIn = () => {
         toast.error("Invalid credentials, please try again.");
       }
     } catch (error) {
-      toast.error(`An unexpected error occurred: ${error.message || error}`);
+      toast.error(`An unexpected error occurred: ${error}`);
       console.log(error);
     } finally {
       setLoading(false);
