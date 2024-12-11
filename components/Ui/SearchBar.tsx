@@ -8,7 +8,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="Search"
-          className="rounded-2xl active:border-primary py-2 px-12 lg:w-[44rem] md:w-[300px] sm:w-full h-[61px]"
+          className="rounded-2xl border-1 border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary active:border-primary outline-none py-2 px-12 lg:w-[44rem] md:w-[300px] sm:w-full h-[61px] transition"
         />
         <Image
           src={search}
