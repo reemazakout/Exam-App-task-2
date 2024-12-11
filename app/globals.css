@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*the loader style */
+.loader {
+  width: 120px;
+  height: 20px;
+  -webkit-mask: linear-gradient(90deg, #000 70%, #0000 0) left/20% 100%;
+  background: linear-gradient(#000 0 0) left -25% top 0 /20% 100% no-repeat #ddd;
+  animation: l7 1s infinite steps(6);
+}
+@keyframes l7 {
+  100% {
+    background-position: right -25% top 0;
+  }
+}
+.test {
+  align-content: center;
+}
+
+@layer utilities {
+  .btn {
+    @apply bg-primary rounded-[20px] font-[600] flex items-center justify-center text-[20px] w-[191px] text-white py-[16px] h-[61px] px-5 hover:opacity-90;
+  }
+  .small_btn {
+    @apply bg-primary w-[77px] h-[23px] text-white rounded-[10px] flex items-center justify-center hover:opacity-90;
+  }
+  .lg_btn {
+    @apply w-[295px] h-[56px] py-[10px] px-[24px] rounded-[25px] flex items-center justify-center hover:opacity-90;
+  }
+}
